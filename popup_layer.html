@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #ccc;
+        }
+        h1 {
+            margin-left: 15px;
+        }
+        .big {
+            color: red;
+        }
+        .popup {
+            background: #fff;
+            width: 300px;
+            height: 250px;
+            border: 10px double #ccc;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .popup button {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            background: none;
+            border: 1px solid #ccc;
+            font-size: 0.8em;
+        }
+        #notice {
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            z-index: 1000;
+        }
+        .phoyo {
+            width: 455px;
+            height: 700px;
+            background: url(img/araaa.png) no-repeat;
+            right: 0;
+        }
+        .phoyo button {
+            position: absolute;
+            bottom: 120px;
+            right: 55px;
+            background: #666;
+            color: white;
+            border: 1px solid #ccc;
+            font-size: 0.8em;
+        }
+        #photo {
+            position: absolute;
+            left: 500px;
+            top: 100px;
+            z-index: 1000;
+        }
+    </style>
+    <title>레이어 팝업창</title>
+</head>
+<body>
+    <p> 문서를 열면 레이어팝업창이 그대로 보인다. </p>
+    <div id="#pre">
+        <pre>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dicit stare integer, fugiendis putant contra hac asperum praesentium. 
+            Eximiae intervenire petat ferri patiatur salutandi. Captet laus ars aristoteli inanitate diu eruditi invenire. 
+            Successionem malo utrumvis miraretur homine. Compositis uberiora latinas conectitur quaerendum. 
+            Sophocles arte diuturnum quamque, ridiculus poetarum postulet quosdam temporis dictum putanda.
+            Brevis quos, honestatis factis iustitiam geometriaque. Pater disputatione ferre greges odioque praesent beatam imperio. 
+
+            Voluerint iucunditas appareat inter constituam quod praeda quantumcumque persequeris. 
+            Studiose inceptos liquidae voluntates maxime inermis menandro comprehenderit aliqua bella consectetur. 
+            Utramque attulit insequitur efflorescere instructus diligenter. Doctus sint utinam familias quidem inquam dui infimum vester.
+            Gravitate deorsus gratiam argumentandum ipsa. Memoriter nulli, qualisque potione opera reliquaque fortitudinem. Sponte discedere irridente probarent vendibiliora superstitione habitant. 
+
+            Quicquam oderit possent disserendum tempora ingenia quaedam requietis risus. Pervenias sanciret ars a aliquid impendere munere. Pecunias maiorum mutat massa iisque. Habuit movere, consequat contemnentes interesset utamur error expetenda, fodere culpa. Vel chorusque, legatis posset scientiam huius, probabo commodis. Secutus doctissimos locis imbutus perfunctio habeatur discordiae tractat utinam numquidnam. 
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dicit stare integer, fugiendis putant contra hac asperum praesentium. Eximiae intervenire petat ferri patiatur salutandi. Captet laus ars aristoteli inanitate diu eruditi invenire. Successionem malo utrumvis miraretur homine. Compositis uberiora latinas conectitur quaerendum. Sophocles arte diuturnum quamque, ridiculus poetarum postulet quosdam temporis dictum putanda. Brevis quos, honestatis factis iustitiam geometriaque. Pater disputatione ferre greges odioque praesent beatam imperio. 
+
+            Voluerint iucunditas appareat inter constituam quod praeda quantumcumque persequeris. Studiose inceptos liquidae voluntates maxime inermis menandro comprehenderit aliqua bella consectetur. Utramque attulit insequitur efflorescere instructus diligenter. Doctus sint utinam familias quidem inquam dui infimum vester. Gravitate deorsus gratiam argumentandum ipsa. Memoriter nulli, qualisque potione opera reliquaque fortitudinem. Sponte discedere irridente probarent vendibiliora superstitione habitant.
+
+            Quicquam oderit possent disserendum tempora ingenia quaedam requietis risus. Pervenias sanciret ars a aliquid impendere munere. Pecunias maiorum mutat massa iisque. Habuit movere, consequat contemnentes interesset utamur error expetenda, fodere culpa. Vel chorusque, legatis posset scientiam huius, probabo commodis. Secutus doctissimos locis imbutus perfunctio habeatur discordiae tractat utinam numquidnam.
+            Quicquam oderit possent disserendum tempora ingenia quaedam requietis risus. Pervenias sanciret ars a aliquid impendere munere. Pecunias maiorum mutat massa iisque. Habuit movere, consequat contemnentes interesset utamur error expetenda, fodere culpa. Vel chorusque, legatis posset scientiam huius, probabo commodis. Secutus doctissimos locis imbutus perfunctio habeatur discordiae tractat utinam numquidnam.
+            Quicquam oderit possent disserendum tempora ingenia quaedam requietis risus. Pervenias sanciret ars a aliquid impendere munere. Pecunias maiorum mutat massa iisque. Habuit movere, consequat contemnentes interesset utamur error expetenda, fodere culpa. Vel chorusque, legatis posset scientiam huius, probabo commodis. Secutus doctissimos locis imbutus perfunctio habeatur discordiae tractat utinam numquidnam.
+
+        </div>
+    </p>
+    <!-- 레이어 팝업창(가장 위 혹은 가장 아래 작성) -->
+    <div id="notice" class="popup">
+        <h1> <div class="big">완전</div> 큰 글자 </h1>
+        <ul>
+            <li> 작은글자 </li>
+            <li> 이것도 작은 글자</li>
+            <li> 마라탕 </li>
+            <li> 군고구마 </li>
+            <li> 집근처 초코붕어빵 </li>
+        </ul>
+        <button><a style="cursor:pointer;">닫기</a></button>
+    </div>
+
+    <!-- ------------------------------------------- -->
+
+    <div id="photo" class="phoyo">
+        <button><a style="cursor:pointer;">닫기</a></button>
+    </div>
+<!-- --------------------------------------- -->
+    <script>
+        let closeBtn = document.querySelector('.popup > button');
+
+        closeBtn.addEventListener('click', function(){
+            document.querySelector('.popup').style.display='none';
+            document.querySelector('body').style.background='none';
+        });
+        // -------------------------------------------------------------------------
+        let phoyo = document.querySelector('.phoyo > button');
+
+        phoyo.addEventListener('click', function(){
+            document.querySelector('.phoyo').style.display='none';
+            document.querySelector('body').style.background='none';
+        });
+    </script>
+</body>
+</html>
